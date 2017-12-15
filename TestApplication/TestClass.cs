@@ -18,7 +18,7 @@ namespace TestApplication
             IWebDriver dr = new ChromeDriver(@"E:\Suman\Softwares\Cell\Visual Studio\Driver");
             dr.Url = "https://www.google.com/";
             String s = dr.Title;
-            dr.FindElement(By.XPath("//*[@id='lst-i']")).SendKeys("Sachin");
+            dr.FindElement(By.XPath("//*[@id='lst-ib']")).SendKeys("Sachin");
             Console.WriteLine(s);
         }
     }
