@@ -26,6 +26,7 @@ namespace TestApplication
             dr.FindElement(By.Name("password")).SendKeys("$123#LordTest");
             dr.FindElement(By.XPath("//*[@id='login-form']/button")).Click();
 
+
         }
     }
 }
