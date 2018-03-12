@@ -21,8 +21,8 @@ namespace TestApplication
             dr.Url = "http://172.17.3.13/site/login";
             String s = dr.Title;
             
+            // dr.FindElement(By.XPath("//*[@id='lst-ib']")).SendKeys("Sachin");
             
-            dr.FindElement(By.XPath("//*[@id='lst-ib']")).SendKeys("Sachin");
             Console.WriteLine(s);
             dr.FindElement(By.Name("username")).SendKeys("_T_Admin");
             dr.FindElement(By.Name("password")).SendKeys("$123#LordTest");
