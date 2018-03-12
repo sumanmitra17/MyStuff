@@ -20,6 +20,8 @@ namespace TestApplication
             dr.Manage().Window.Maximize();
             dr.Url = "http://172.17.3.13/site/login";
             String s = dr.Title;
+            
+            
             dr.FindElement(By.XPath("//*[@id='lst-ib']")).SendKeys("Sachin");
             Console.WriteLine(s);
             dr.FindElement(By.Name("username")).SendKeys("_T_Admin");
